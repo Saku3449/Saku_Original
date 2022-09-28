@@ -22,7 +22,6 @@ a {
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 0 1px;
-    transition: background-size 0.6s;
 }
 
 header {
@@ -37,35 +36,27 @@ header {
     color: #000;
 
     padding: 20px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 
-header nav ul {
+header #g-nav {
     list-style: none;
     display: flex;
-    /* justify-content: center; */
+    justify-content: flex-end;
 }
 
-header li:first-child {
+header #g-nav div:first-child {
     margin-right: auto;
 }
 
-/* header .right-content {
-    display: flex;
-} */
-
-header nav li a {
-    display: block;
-    text-decoration: none;
-    color: #666;
+header #g-nav a {
     padding: 10px;
     transition: all 0.3s;
 }
 
-nav ul li.current a {
+header .current {
     color: #A95B00;
     background-size: 100% 1px;
 }

@@ -16,20 +16,20 @@ function PositionCheck() {
 function ScrollAnime() {
   //スクロールした際のナビゲーションの関数にまとめる
   var scroll = Math.round($(window).scrollTop());
-  var NavElem = $("#g-nav li"); //ナビゲーションのliの何番目かを定義するための準備
-  $("#g-nav li").removeClass("current"); //全てのナビゲーションの現在地クラスを除去
+  var NavElem = $("#g-nav a"); //ナビゲーションのaの何番目かを定義するための準備
+  $("#g-nav a").removeClass("current"); //全てのナビゲーションの現在地クラスを除去
   if (scroll >= 0 && scroll < elemTop[1]) {
     //スクロール値が0以上 .scroll-point 1つめ（area-1）の高さ未満
-    $(NavElem[0]).addClass("current"); //1つめのliに現在地クラスを付与
+    $(NavElem[0]).addClass("current"); //1つめのaに現在地クラスを付与
   } else if (scroll >= elemTop[1] && scroll < elemTop[2]) {
     //.scroll-point 1つめ（area-1）以上.scroll-point 2つめ（area-2）未満
-    $(NavElem[1]).addClass("current"); //2つめのliに現在地クラスを付与
+    $(NavElem[1]).addClass("current"); //2つめのaに現在地クラスを付与
   } else if (scroll >= elemTop[2] && scroll < elemTop[3]) {
     //.scroll-point 2つめ（area-2）以上.scroll-point 3つめ（area-3）未満
-    $(NavElem[2]).addClass("current"); //3つめのliに現在地クラスを付与
+    $(NavElem[2]).addClass("current"); //3つめのaに現在地クラスを付与
   } else if (scroll >= elemTop[3]) {
     // .scroll-point 3つめ（area-3）以上
-    $(NavElem[3]).addClass("current"); //4つめのliに現在地クラスを付与
+    $(NavElem[3]).addClass("current"); //4つめのaに現在地クラスを付与
   }
 }
 

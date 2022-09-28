@@ -139,3 +139,39 @@ header .current {
     font-size: 18px;
     line-height: 1.8em;
 }
+
+.points {
+    text-align: center;
+    justify-content: center;
+}
+
+.point {
+    margin: 130px 0;
+}
+
+.point-num {
+    color: #D1490F;
+    font-size: 48px;
+    margin: 20px;
+}
+
+.point-content {
+    background-color: #EDEDED;
+    border-radius: 90px;
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+    padding: 40px 0;
+}
+
+.point-title {
+    font-size: 48px;
+    margin: 20px;
+}
+
+.point-text {
+    text-align: left;
+    font-size: 24px;
+    width: 80%;
+    margin: 40px 10%;
+}

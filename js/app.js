@@ -58,3 +58,68 @@ $(window).resize(function () {
   //リサイズされたときの処理
   PositionCheck();
 });
+
+$(function () {
+  // 変数に要素を入れる
+  var
+  sakae = $(".sakae"),
+  sakaeClose = $("#sakae-close"),
+  sakaeContainer = $("#sakae-container"),
+  chikusa = $(".chikusa"),
+  chikusaClose = $("#chikusa-close"),
+  chikusaContainer = $("#chikusa-container"),
+  ozone = $(".ozone"),
+  ozoneClose = $("#ozone-close"),
+  ozoneContainer = $("#ozone-container"),
+  moriyama = $(".moriyama"),
+  moriyamaClose = $("#moriyama-close"),
+  moriyamaContainer = $("#moriyama-container"),
+  imaike = $(".imaike"),
+  imaikeClose = $("#imaike-close"),
+  imaikeContainer = $("#imaike-container");
+
+  sakae.on("click", function () {
+    sakaeContainer.addClass("active");
+    return true;
+  });
+
+  chikusa.on("click", function () {
+    chikusaContainer.addClass("active");
+    return true;
+  });
+
+  ozone.on("click", function () {
+    ozoneContainer.addClass("active");
+    return true;
+  });
+
+  moriyama.on("click", function () {
+    moriyamaContainer.addClass("active");
+    return true;
+  });
+
+  imaike.on("click", function () {
+    imaikeContainer.addClass("active");
+    return true;
+  });
+
+  sakaeClose.on("click", function () {
+    sakaeContainer.removeClass("active");
+  });
+
+  chikusaClose.on("click", function () {
+    chikusaContainer.removeClass("active");
+  });
+
+  ozoneClose.on("click", function () {
+    ozoneContainer.removeClass("active");
+  });
+
+  moriyamaClose.on("click", function () {
+    moriyamaContainer.removeClass("active");
+  });
+
+  imaikeClose.on("click", function () {
+    imaikeContainer.removeClass("active");
+  });
+});

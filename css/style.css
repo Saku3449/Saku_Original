@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Serif JP', serif;
     font-family: 'Shippori Mincho', serif;
+    font-family: 'Noto Serif JP', serif;
 }
 
 body {
@@ -39,6 +39,7 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    z-index: 1;
 }
 
 header #g-nav {
@@ -74,13 +75,67 @@ header .current {
 
 .title {
     display: flex;
+    margin: 10% 10% 5% 10%;
+    color: #A95B00;
+    align-items: center;
+}
+
+.line {
+    position: relative;
+    display: inline-block;
+    content: "";
+    margin: 0 10px;
+    width: 50px;
+    border-top: 1px solid #A95B00;
+}
+
+.sub-title {
+    font-size: 26px;
+}
+
+.main-title {
+    font-size: 50px;
+    margin: 0 10%;
+}
+
+.background-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 128px;
+    position: absolute;
+    left: 70%;
+    z-index: -1;
 }
 
 #why .text-left,
 #why .text-right {
     display: flex;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.why-content-right,
+.why-content-left {
+    width: 40vw;
+    margin: 20px 2.5vw;
+    justify-content: center;
 }
 
 #why img {
-    width: 50%;
+    width: 40vw;
+    margin: 0 2.5vw;
+    border-radius: 3em;
+}
+
+.why-content-title {
+    color: #A95B00;
+    font-size: 28px;
+    margin: 50px 0;
+}
+
+#why p {
+    text-align: left;
+    width: 60%;
+    margin: 0 20%;
+    font-size: 18px;
+    line-height: 1.8em;
 }

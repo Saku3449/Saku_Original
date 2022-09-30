@@ -624,11 +624,12 @@ footer p {
         padding: 30px 20px;
         line-height: 1.5em;
         text-align: left;
+        font-size: 13px;
     }
 
     .modal-footer {
         padding: 0 20px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .point {

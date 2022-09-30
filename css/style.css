@@ -86,6 +86,10 @@ header .current {
     justify-content: center;
 }
 
+.firstview-title {
+    display: flex;
+}
+
 .title {
     display: flex;
     margin: 10% 10% 5% 10%;

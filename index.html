@@ -34,12 +34,18 @@
     </header>
     <main>
         <section class="scroll-point" id="firstview">
-            <h1>Nagoya × Sauna</h1>
+            <div class="firstview-title">
+                <div class="h1-title">Nagoya</div>
+                <div class="h1-title">×</div>
+                <div class="h1-title">Sauna</div>
+            </div>
         </section>
         <section class="scroll-point fuwat" id="why">
             <div class="title">
-                <div class="line"></div>
-                <h3 class="sub-title">Why?</h3>
+                <div class="sub-group">
+                    <div class="line"></div>
+                    <h3 class="sub-title">Why?</h3>
+                </div>
                 <h2 class="main-title">「名古屋×サウナ」の訳</h2>
                 <div class="background-text">Why</div>
             </div>
@@ -72,48 +78,62 @@
         </section>
         <section class="scroll-point fuwat" id="list">
             <div class="title">
-                <div class="line"></div>
-                <h3 class="sub-title">一覧</h3>
+                <div class="sub-group">
+                    <div class="line"></div>
+                    <h3 class="sub-title">一覧</h3>
+                </div>
                 <h2 class="main-title">管理者イチ推しお風呂</h2>
                 <div class="background-text">List</div>
             </div>
             <div class="items">
                 <div class="item sakae">
-                    <div class="place">
-                        <p>栄</p>
+                    <div class="item-image">
+                        <img src="./images/sauna lab.png" alt="">
+                        <div class="place">
+                            <p>栄</p>
+                        </div>
                     </div>
-                    <div class="item-image"><img src="./images/sauna lab.png" alt=""></div>
                 </div>
                 <div class="item chikusa">
-                    <div class="place">
-                        <p>千種</p>
+                    <div class="item-image">
+                        <img src="./images/goraku.png" alt="">
+                        <div class="place">
+                            <p>千種</p>
+                        </div>
                     </div>
-                    <div class="item-image"><img src="./images/goraku.png" alt=""></div>
                 </div>
                 <div class="item ozone">
-                    <div class="place">
-                        <p>大曽根</p>
+                    <div class="item-image">
+                        <img src="./images/yuno-shiro.png" alt="">
+                        <div class="place">
+                            <p>大曽根</p>
+                        </div>
                     </div>
-                    <div class="item-image"><img src="./images/yuno-shiro.png" alt=""></div>
                 </div>
                 <div class="item moriyama">
-                    <div class="place">
-                        <p>守山</p>
+                    <div class="item-image">
+                        <img src="./images/ryusenji.png" alt="">
+                        <div class="place">
+                            <p>守山</p>
+                        </div>
                     </div>
-                    <div class="item-image"><img src="./images/ryusenji.png" alt=""></div>
                 </div>
                 <div class="item imaike">
-                    <div class="place">
-                        <p>今池</p>
+                    <div class="item-image">
+                        <img src="./images/wellbe.png" alt="">
+                        <div class="place">
+                            <p>今池</p>
+                        </div>
                     </div>
-                    <div class="item-image"><img src="./images/wellbe.png" alt=""></div>
                 </div>
             </div>
         </section>
         <section class="scroll-point fuwat" id="rule">
             <div class="title">
-                <div class="line"></div>
-                <h3 class="sub-title">心得</h3>
+                <div class="sub-group">
+                    <div class="line"></div>
+                    <h3 class="sub-title">心得</h3>
+                </div>
                 <h2 class="main-title">気持ちいい入浴のために</h2>
                 <div class="background-text">Rule</div>
             </div>
@@ -191,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal-container" id="ozone-container">
+        <div class="modal-container active" id="ozone-container">
             <div class="modal-body">
                 <!-- 閉じるボタン -->
                 <div class="modal-close" id="ozone-close">×</div>
@@ -199,8 +219,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <div class="name">湯の城</div>
-                        <div class="price">入泉料780円~</div>
-                        <div class="access">大曽根駅から徒歩7分</div>
+                        <div class="modal-header-right">
+                            <div class="price">入泉料780円~</div>
+                            <div class="access">大曽根駅から徒歩7分</div>
+                        </div>
                     </div>
                     <hr>
                     <div class="modal-main">
@@ -265,6 +287,7 @@
         </div>
     </main>
     <footer>
+        <div class="footer-line"></div>
         <div>&copy;Yusaku Nokubi, Saku</div>
         <p>イラストは全て<a href="https://storyset.com/people">People illustrations by Storyset</a>を利用しています</p>
     </footer>

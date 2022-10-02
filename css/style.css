@@ -494,14 +494,20 @@ footer p {
         margin: 30px 0;
     }
 
+    #why p {
+        width: 70%;
+        margin: 0 15%;
+    }
+
     #why img {
-        width: 60vw;
+        width: 80%;
         margin: 0;
         border-radius: 1em;
     }
 
     .items {
         display: block;
+        margin: 20% 0;
     }
 
     .item {
@@ -638,6 +644,11 @@ footer p {
 
     .point-num {
         font-size: 42px;
+    }
+
+    .point-content {
+        width: 80%;
+        margin: 10%;
     }
 
     .point-title {
